@@ -24,6 +24,7 @@ namespace IntGraphLabo8
         {
 
             // Bonjour Antoine
+            // Salut Michel
             InitializeComponent();
         }
     }
