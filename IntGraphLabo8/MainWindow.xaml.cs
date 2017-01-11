@@ -71,7 +71,7 @@ namespace IntGraphLabo8
         private void StateUpdate()
         {
             if(_homePage.IsConnected)
-                switch (_homePage.CurrentProfile)
+                switch (_machineApplication.User.CurrentProfile)
                 {
                     case Profile.Operator:
                         OperatorImage.Visibility = Visibility.Visible;
