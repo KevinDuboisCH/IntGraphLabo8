@@ -3,10 +3,123 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:IntGraphLabo8"
+        xmlns:local="clr-namespace:UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="ArKdPaintingMachine" Height="800" Width="1200"
+        ResizeMode="CanMinimize"
+        Background="#FF006899">
+    <Window.Resources>
+        <FontFamily x:Key="fontFamily">Tahoma</FontFamily>
+        <Style x:Key="BlueDegradedButton" TargetType="Button">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#FFADDCE6" Offset="0"/>
+                        <GradientStop Color="#FF00AEFF" Offset="0.5"/>
+                        <GradientStop Color="LightBlue" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="8,4" />
+            <Setter Property="Margin" Value="4" />
+        </Style>
+        <Style x:Key="ActivatedButton" TargetType="Button">
+            <Setter Property="Background">
+                <Setter.Value>
+                    LightBlue
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="8,4" />
+            <Setter Property="Margin" Value="4" />
+        </Style>
+    </Window.Resources>
+    
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Right"
+                   Height="auto"
+                   Width="250">
+            <local:SupervisionControl x:Name="SupervisionControl"
+                                      Height="auto"
+                                      Width="auto"
+                                      Status="Arrêté">
+
+            </local:SupervisionControl>
+
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top"
+                   Height="auto"
+                   Width="auto">
+
+        </DockPanel>
+        <Rectangle DockPanel.Dock="Right"
+                   Width="3"
+                   Fill="DarkBlue"/>
+        <DockPanel DockPanel.Dock="Bottom">
+            <Grid Height="auto" Width="auto">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0" 
+                        x:Name="Accueil" 
+                        Style="{StaticResource BlueDegradedButton}"
+                        Content="Accueil" 
+                        Margin="0"
+                        FontSize="35"
+                        Width="auto" 
+                        Height="120"
+                        Click="Accueil_Click"/>
+                <Button Grid.Column="1" 
+                        x:Name="Chargement" 
+                        Style="{StaticResource BlueDegradedButton}"
+                        Content="Chargement" 
+                        Margin="0"
+                        FontSize="35"
+                        Width="auto" 
+                        Height="auto"/>
+                <Button Grid.Column="2" 
+                        x:Name="Supervision" 
+                        Style="{StaticResource BlueDegradedButton}"
+                        Content="Supervision" 
+                        Margin="0"
+                        FontSize="35"
+                        Width="auto" 
+                        Height="auto"/>
+                <Button Grid.Column="3" 
+                        x:Name="Configuration" 
+                        Style="{StaticResource BlueDegradedButton}"
+                        Content="Configuration" 
+                        Margin="0"
+                        FontSize="35"
+                        Width="auto" 
+                        Height="auto"
+                        Click="Configuration_Click" />
+            </Grid>
+        </DockPanel>
+        <Grid DockPanel.Dock="Top" Height="250">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" x:Name="AdministratorImage" Source="HomePage\Images\Administrator.png" Visibility="Hidden"/>
+            <Image Grid.Column="0" x:Name="OperatorImage" Source="HomePage\Images\Operator.png" Visibility="Hidden"/>
+            <Image Grid.Column="0" x:Name="ManagerImage" Source="HomePage\Images\Boss.png" Visibility="Hidden"/>
+            <!--local:Clock Grid.Column="2"
+                         Height="auto"
+                         Width="auto"/-->
+        </Grid>
+        <Grid>
+            <local:ConfigSheet x:Name="ConfigSheet"
+                               Visibility="Hidden"/>
+            <local:HomePage x:Name="HomePage"
+                            Visibility="Hidden"/>
+        </Grid>
+    </DockPanel>
 </Window>

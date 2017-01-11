@@ -55,6 +55,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Clock\Clock.xaml.cs">
+      <DependentUpon>Clock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clock\Common\BindableBase.cs" />
+    <Compile Include="Clock\Models\Item.cs" />
+    <Compile Include="HomePage\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisionControl\SupervisionControl.xaml.cs">
+      <DependentUpon>SupervisionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\User.cs" />
+    <Page Include="Clock\Clock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfigSheet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomePage\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,10 +91,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ConfigSheet.xaml.cs">
+      <DependentUpon>ConfigSheet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataField.xaml.cs">
+      <DependentUpon>DataField.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SupervisionControl\SupervisionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,6 +132,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Clock\Images\backGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SupervisionControl\Image\startButton.png" />
+    <Resource Include="SupervisionControl\Image\stopButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HomePage\Images\Administrator.png" />
+    <Resource Include="HomePage\Images\Boss.png" />
+    <Resource Include="HomePage\Images\Bucket.jpg" />
+    <Resource Include="HomePage\Images\Loading.png" />
+    <Resource Include="HomePage\Images\Multiplication.png" />
+    <Resource Include="HomePage\Images\Operator.png" />
+    <Resource Include="HomePage\Images\Validate.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace IntGraphLabo8
+namespace UserControls
 {
     public partial class HomePage : UserControl
     {

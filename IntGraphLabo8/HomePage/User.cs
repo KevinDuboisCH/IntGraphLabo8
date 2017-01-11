@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntGraphLabo8
+namespace UserControls
 {
     public enum Profile { Operator = 0, Manager, Administrator };
 
