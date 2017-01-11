@@ -19,11 +19,14 @@ namespace UserControls
 {
     public partial class HomePage : UserControl
     {
-        public HomePage()
+        public HomePage(MachineApplication machineApplication)
         {
             InitializeComponent();
+            _machineApplication = new MachineApplication();
+            _machineApplication = machineApplication;
+            DataContext = machineApplication;
 
-            _user = new User();
+            //_user = new User();
             CurrentProfile = Profile.Operator;
             _isConnected = false;
 
@@ -33,7 +36,7 @@ namespace UserControls
             descriptorCurrentProfile.AddValueChanged(this, CurrentProfileChange);
         }
 
-
+        private MachineApplication _machineApplication;
 
         #region Current Profile Dependency Property
         public Profile CurrentProfile
@@ -79,7 +82,7 @@ namespace UserControls
 
         #endregion
 
-        private User _user;
+        //private User _user;
 
         //private Profile _currentProfile;
         //public Profile CurrentProfile
@@ -133,7 +136,7 @@ namespace UserControls
         {
             if (!IsConnected)
             {
-                if (_user.TryConnection(CurrentProfile, PasswordBoxProfile.Password))
+                if (_machineApplication.User.TryConnection(CurrentProfile, PasswordBoxProfile.Password))
                 {
                     _isConnected = true;
                     TextBlockConnectionResult.Text = string.Empty;

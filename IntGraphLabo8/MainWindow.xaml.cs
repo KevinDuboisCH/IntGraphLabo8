@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using UserControls;
 
 //Salut Poilu;
 namespace IntGraphLabo8
@@ -31,8 +32,16 @@ namespace IntGraphLabo8
             timer.Enabled = true;
 
             InitializeComponent();
-
+            _machineApplication = new MachineApplication();
+            _homePage = new HomePage(_machineApplication);
         }
+
+        private MachineApplication _machineApplication;
+
+        #region Variable Content User Controls
+        private HomePage _homePage;
+        private ConfigSheet _configSheet;
+        #endregion
 
         void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
@@ -44,23 +53,25 @@ namespace IntGraphLabo8
 
         private void Configuration_Click(object sender, RoutedEventArgs e)
         {
-            ConfigSheet.Visibility = Visibility.Visible;
-            HomePage.Visibility = Visibility.Hidden;
+            //ConfigSheet.Visibility = Visibility.Visible;
+            //HomePage.Visibility = Visibility.Hidden;
             SupervisionControl.StartEnable = false;
         }
 
         private void Accueil_Click(object sender, RoutedEventArgs e)
         {
-            ConfigSheet.Visibility = Visibility.Hidden;
-            HomePage.Visibility = Visibility.Visible;
+            //ConfigSheet.Visibility = Visibility.Hidden;
+            //HomePage.Visibility = Visibility.Visible;
+            AreaVariableContent.Children.Clear();
+            AreaVariableContent.Children.Add(_homePage);
             SupervisionControl.StartEnable = true;
             SupervisionControl.Status = "test";
         }
 
         private void StateUpdate()
         {
-            if(HomePage.IsConnected)
-                switch (HomePage.CurrentProfile)
+            if(_homePage.IsConnected)
+                switch (_homePage.CurrentProfile)
                 {
                     case Profile.Operator:
                         OperatorImage.Visibility = Visibility.Visible;

@@ -115,11 +115,11 @@
                          Height="auto"
                          Width="auto"/-->
         </Grid>
-        <Grid>
-            <local:ConfigSheet x:Name="ConfigSheet"
+        <Grid Name="AreaVariableContent">
+            <!--<local:ConfigSheet x:Name="ConfigSheet"
                                Visibility="Hidden"/>
             <local:HomePage x:Name="HomePage"
-                            Visibility="Hidden"/>
+                            Visibility="Hidden"/>-->
         </Grid>
     </DockPanel>
 </Window>
