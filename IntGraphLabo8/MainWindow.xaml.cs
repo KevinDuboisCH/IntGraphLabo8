@@ -61,13 +61,13 @@ namespace IntGraphLabo8
             if(HomePage.IsConnected)
                 switch (HomePage.CurrentProfile)
                 {
-                    case UserControls.Profile.Operator:
+                    case Profile.Operator:
                         OperatorImage.Visibility = Visibility.Visible;
                         break;
-                    case UserControls.Profile.Manager:
+                    case Profile.Manager:
                         ManagerImage.Visibility = Visibility.Visible;
                         break;
-                    case UserControls.Profile.Administrator:
+                    case Profile.Administrator:
                         AdministratorImage.Visibility = Visibility.Visible;
                         break;
                     default:
