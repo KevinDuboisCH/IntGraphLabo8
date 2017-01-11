@@ -17,7 +17,6 @@ C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8.pdb
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\bin\Debug\IntGraphLabo8.exe
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\bin\Debug\IntGraphLabo8.pdb
-C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8.csprojResolveAssemblyReference.cache
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\MainWindow.g.cs
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\App.g.cs
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8_MarkupCompile.cache
@@ -26,3 +25,15 @@ C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8.g.resources
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8.Properties.Resources.resources
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8.csproj.GenerateResource.Cache
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\ConfigSheet.g.cs
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\DataField.g.cs
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\ConfigSheet.baml
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\DataField.baml
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\Clock\Clock.g.cs
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\Clock\Clock.baml
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\SupervisionControl\SupervisionControl.baml
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\SupervisionControl\SupervisionControl.g.cs
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\HomePage\HomePage.g.cs
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\HomePage\HomePage.baml
+C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\obj\Debug\IntGraphLabo8.csprojResolveAssemblyReference.cache

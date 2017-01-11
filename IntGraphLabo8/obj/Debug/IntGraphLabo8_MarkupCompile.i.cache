@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Kevin\Desktop\00-HEIGVD2015-2016\01-C#\IntGraphLabo8\IntGraphLabo8\App.xaml
-11151548125
+61187126324
 
-91335155604
+1730904811
 13738642453
-MainWindow.xaml;
+Clock\Clock.xaml;ConfigSheet.xaml;DataField.xaml;HomePage\HomePage.xaml;MainWindow.xaml;SupervisionControl\SupervisionControl.xaml;
 
 False
 
